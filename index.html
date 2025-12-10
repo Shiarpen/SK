@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SK Kids Wear - Ropa Infantil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tipografía infantil / moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <span class="header__logo-mark">SK</span>
+        <span class="header__logo-text">Kids Wear</span>
+      </div>
+
+      <button class="header__toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav class="header__nav" id="mainNav">
+        <a href="#inicio" class="header__nav-link">Inicio</a>
+        <a href="#productos" class="header__nav-link">Productos</a>
+        <a href="#promociones" class="header__nav-link">Promociones</a>
+        <a href="#contacto" class="header__nav-link">Contacto</a>
+        <a href="#sobre-nosotros" class="header__nav-link">Sobre Nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / CARRUSEL -->
+    <section id="inicio" class="hero">
+      <div class="hero__carousel" id="heroCarousel">
+        <div class="hero__slide hero__slide--active">
+          <div class="hero__content">
+            <h1>SK Kids Wear</h1>
+            <p>Ropa infantil cómoda, divertida y llena de color para tus pequeños.</p>
+            <a href="#productos" class="btn btn--primary">Ver productos</a>
+          </div>
+          <div class="hero__image hero__image--1"></div>
+        </div>
+
+        <div class="hero__slide">
+          <div class="hero__content">
+            <h1>Nueva colección</h1>
+            <p>Prendas suaves, modernas y seguras para jugar, aprender y soñar.</p>
+            <a href="#promociones" class="btn btn--secondary">Ver promociones</a>
+          </div>
+          <div class="hero__image hero__image--2"></div>
+        </div>
+
+        <div class="hero__slide">
+          <div class="hero__content">
+            <h1>Estilo que crece con ellos</h1>
+            <p>Outfits para bebés, niños y niñas, pensados para cada momento.</p>
+            <a href="#contacto" class="btn btn--primary">Hablar por WhatsApp</a>
+          </div>
+          <div class="hero__image hero__image--3"></div>
+        </div>
+      </div>
+
+      <button class="hero__control hero__control--prev" id="prevSlide" aria-label="Slide anterior">‹</button>
+      <button class="hero__control hero__control--next" id="nextSlide" aria-label="Slide siguiente">›</button>
+
+      <div class="hero__dots" id="carouselDots"></div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section section--light">
+      <div class="section__header">
+        <h2>Nuestros productos</h2>
+        <p>Elige tus prendas favoritas y cómpralas al instante por WhatsApp.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- 10 productos de ejemplo -->
+        <!-- Producto 1 -->
+        <article class="product-card" data-product="Body de algodón para bebé">
+          <div class="product-card__image product-card__image--1"></div>
+          <h3 class="product-card__title">Body de algodón para bebé</h3>
+          <p class="product-card__price">S/ 39.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="product-card" data-product="Conjunto short y polo arcoíris">
+          <div class="product-card__image product-card__image--2"></div>
+          <h3 class="product-card__title">Conjunto short y polo arcoíris</h3>
+          <p class="product-card__price">S/ 59.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="product-card" data-product="Pijama estampada nubes">
+          <div class="product-card__image product-card__image--3"></div>
+          <h3 class="product-card__title">Pijama estampada nubes</h3>
+          <p class="product-card__price">S/ 49.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="product-card" data-product="Vestido rosa pastel con lazo">
+          <div class="product-card__image product-card__image--4"></div>
+          <h3 class="product-card__title">Vestido rosa pastel con lazo</h3>
+          <p class="product-card__price">S/ 69.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 5 -->
+        <article class="product-card" data-product="Polera azul con estampado de estrellas">
+          <div class="product-card__image product-card__image--5"></div>
+          <h3 class="product-card__title">Polera azul con estrellas</h3>
+          <p class="product-card__price">S/ 59.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 6 -->
+        <article class="product-card" data-product="Jogger suave unisex">
+          <div class="product-card__image product-card__image--6"></div>
+          <h3 class="product-card__title">Jogger suave unisex</h3>
+          <p class="product-card__price">S/ 54.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 7 -->
+        <article class="product-card" data-product="Chaleco acolchado ligero">
+          <div class="product-card__image product-card__image--7"></div>
+          <h3 class="product-card__title">Chaleco acolchado ligero</h3>
+          <p class="product-card__price">S/ 79.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 8 -->
+        <article class="product-card" data-product="Pack 3 polos básicos">
+          <div class="product-card__image product-card__image--8"></div>
+          <h3 class="product-card__title">Pack 3 polos básicos</h3>
+          <p class="product-card__price">S/ 69.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 9 -->
+        <article class="product-card" data-product="Sudadera con capucha orejitas">
+          <div class="product-card__image product-card__image--9"></div>
+          <h3 class="product-card__title">Sudadera orejitas</h3>
+          <p class="product-card__price">S/ 64.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+
+        <!-- Producto 10 -->
+        <article class="product-card" data-product="Vestido marinero azul">
+          <div class="product-card__image product-card__image--10"></div>
+          <h3 class="product-card__title">Vestido marinero azul</h3>
+          <p class="product-card__price">S/ 74.90</p>
+          <button class="btn btn--whatsapp product-card__btn">
+            Comprar por WhatsApp
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROMOCIONES -->
+    <section id="promociones" class="section section--accent">
+      <div class="section__header">
+        <h2>Promociones</h2>
+        <p>Descuentos especiales para vestir a tus peques sin preocuparte por el bolsillo.</p>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <h3>2x1 en polos básicos</h3>
+          <p>Combina colores y estilos para todos los días.</p>
+        </div>
+        <div class="promo-card">
+          <h3>10% de dto. por tu primera compra</h3>
+          <p>Válido comprando por WhatsApp.</p>
+        </div>
+        <div class="promo-card">
+          <h3>Envío gratis</h3>
+          <p>En compras mayores a S/ 150 dentro de la ciudad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--light">
+      <div class="section__header">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas sobre tallas, stock o envíos? Escríbenos.</p>
+      </div>
+      <div class="contact">
+        <form class="contact__form" onsubmit="return false;">
+          <div class="contact__field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Tu nombre" />
+          </div>
+          <div class="contact__field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Cuéntanos qué necesitas"></textarea>
+          </div>
+          <button id="btnContactoWhatsApp" class="btn btn--whatsapp-wide">
+            Enviar por WhatsApp
+          </button>
+        </form>
+
+        <div class="contact__info">
+          <h3>Información de contacto</h3>
+          <p><strong>WhatsApp:</strong> +51 999 999 999</p>
+          <p><strong>Email:</strong> contacto@skkidswear.com</p>
+          <p><strong>Horario:</strong> Lunes a sábado de 9:00 a 19:00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="section section--white">
+      <div class="section__header">
+        <h2>Sobre SK Kids Wear</h2>
+      </div>
+      <div class="about">
+        <p>
+          En <strong>SK Kids Wear</strong> diseñamos ropa infantil pensando en la
+          comodidad, seguridad y alegría de los niños. Trabajamos con telas suaves,
+          colores amigables y detalles que inspiran juegos y aventuras.
+        </p>
+        <p>
+          Nuestra misión es acompañar cada etapa de crecimiento con prendas modernas,
+          fáciles de combinar y que resistan la energía de los más pequeños.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <h3>SK Kids Wear</h3>
+        <p>Ropa infantil con amor y estilo.</p>
+      </div>
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>WhatsApp: +51 999 999 999</p>
+        <p>Email: contacto@skkidswear.com</p>
+      </div>
+      <div>
+        <h4>Políticas</h4>
+        <a href="#">Política de privacidad</a><br />
+        <a href="#">Términos y condiciones</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> SK Kids Wear. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
